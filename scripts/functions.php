@@ -21,8 +21,8 @@ function getConnection(){
         try {
             $conn = new PDO($dsn, $username, $password);
         } catch (PDOException $e){
+            echo "error creating database : ". $conn->errorInfo() . $conn->errorCode();
             die("Неудача");
-            echo "error creating database : ". $dbh->errorInfo() . $dbh->errorCode();
         }
     }
     return $conn;
