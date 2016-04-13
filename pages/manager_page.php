@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: alexander
+ * Date: 11.04.16
+ * Time: 17:33
+ */
+
+require_once "../scripts/header.php";
+require_once '../scripts/functions.php';
+
+echo "<div id='wrapper'>";
+include_once "manager_menu.php";
+include_once "active_orders.php";
+echo "</div>";

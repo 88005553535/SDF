@@ -1,0 +1,2 @@
+INSERT INTO `task` (`id`, `title`, `description`, `task_status`, `employee`, `date_opened`, `date_closed`, `deadline`)
+VALUES (NULL, :title, :description, :status, :employee, CURDATE(), NULL, :deadline);

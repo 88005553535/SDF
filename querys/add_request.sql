@@ -1,0 +1,1 @@
+INSERT INTO `request` (`id`, `title`, `description`, `customer`, `date_opened`, `date_closed`, `request_status`) VALUES (NULL, :title, :description, :customer, CURDATE(), NULL, 1);

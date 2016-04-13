@@ -1,0 +1,1 @@
+SELECT task.id, task.title, task.description, task.task_status, employees.email, task.date_opened, task.date_closed, task.deadline FROM task, employees WHERE task.employee = employees.id AND employees.email = :email

@@ -1,0 +1,104 @@
+body{
+    background-color: #ECF0F1;
+    font-family: Arial;
+    font-size: 1em;
+    color: #000000;
+    padding: 0;
+}
+
+form{
+    background-color: #fcfdfd;
+    border: solid 1px #b6bfc2;
+    padding: 1em 1.5em;
+    margin: 2em auto;
+    width: 15em;
+}
+
+form > label > input, textarea, select{
+    display: block;
+    width: 100%;
+    border: solid 1px #b6bfc2;
+    height: 2em;
+    font-family: inherit;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form .table-caption{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    /*text-decoration: underline;*/
+    text-transform: uppercase;
+}
+
+#menu ul{
+    border: solid 1px #b6bfc2;
+    background-color: #fcfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a{
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    color: black;
+}
+
+#menu li a:visited{
+    color: inherit;
+}
+
+#menu li a:hover{
+    background-color: #6B7B8B;
+    color: #fcfdfd;
+}
+
+#menu li a.current{
+    background-color: #e46363;
+    color: #fcfdfd;
+}
+
+.table {
+    border: solid 1px #b6bfc2;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 3em auto;
+}
+
+.table caption{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0.2em;
+}
+
+.table th{
+    padding: 10px;
+    border: solid 1px #b6bfc2;
+    background-color: #6B7B8B;
+    color: #fcfdfd;
+    font-weight: normal;
+}
+
+.table tr:nth-child(even){
+    background-color: #7a8998;
+}
+.table tr:nth-child(odd){
+    /*background-color: #7a8998;*/
+    background-color: #667686;
+}
+
+.table td{
+    color: #fcfdfd;
+    padding: 10px;
+    border: solid 1px #b6bfc2;
+    border-collapse: collapse;
+}

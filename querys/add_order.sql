@@ -1,0 +1,2 @@
+INSERT INTO `specifications` (`id`, `path`) VALUES (NULL, :specifications);
+INSERT INTO `orders` (`id`, `customer`, `project_name`, `specifications`, `date_opened`, `date_closed`, `price`, `deadline`, `order_status`) VALUES (NULL, :customer, :project_name, LAST_INSERT_ID(), :date_opened, NULL, :price, :deadline , 1);
