@@ -17,6 +17,7 @@ function getConnection(){
     }
 //    $dsn = "mysql:host=".$_SERVER['HTTP_HOST'].";dbname=". $db_database . ";charset=UTF8";
     $dsn = "mysql:host=". 'mysql.hostinger.com.ua'.";dbname=". $db_database . ";charset=UTF8";
+    $conn = new PDO();
     if (!isset($conn)){
         try {
             $conn = new PDO($dsn, $username, $password);
