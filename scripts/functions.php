@@ -8,11 +8,9 @@
 
 function getConnection(){
     if($_SERVER['HTTP_HOST'] == 'localhost'){
-    $username = 'root';
-    $password = '433848814';
-    $db_database = 'software_developer_firm';
-}
-    else{
+//    $username = 'root';
+//    $password = '433848814';
+//    $db_database = 'software_developer_firm';
         $username = 'u548809910_root';
         $password = '433848814';
         $db_database = 'u548809910_sdf';
