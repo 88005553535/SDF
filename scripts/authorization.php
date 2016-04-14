@@ -19,7 +19,6 @@ $sql = $conn->prepare(file_get_contents('../querys/find_user.sql'));
 $sql->bindParam(':email',$user_email);
 $sql->bindParam(':password',$user_password);
 $sql->execute();
-$conn->query($sql);
 
 if($sql->rowCount()==1){
     $_SESSION['user_email'] = $user_email;

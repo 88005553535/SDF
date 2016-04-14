@@ -14,7 +14,6 @@ $conn = getConnection();
 $sql = $conn->prepare(file_get_contents('../querys/requests_by_status.sql'));
 $sql->bindParam(':status_name', $target_status);
 $sql->execute();
-$conn->query($sql);
 
 $requestsList = $sql->fetchAll();
 echo "<table class='table'>";

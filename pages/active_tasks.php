@@ -13,7 +13,6 @@ $conn = getConnection();
 $sql = $conn->prepare(file_get_contents('../querys/find_tasks_by_email.sql'));
 $sql->bindParam(':email', $_SESSION['user_email']);
 $sql->execute();
-$conn->query($sql);
 $taskList = $sql->fetchAll();
 
 echo "<table class='table'>";

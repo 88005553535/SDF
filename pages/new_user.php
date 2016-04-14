@@ -11,10 +11,10 @@ require_once '../scripts/functions.php';
 include_once "manager_menu.php";
 ?>
 
-<form>
+<form action="../scripts/add_user.php" method="post">
     <div class="table-caption">Новий користувач</div>
     <label>Електронна пошта
-        <input type="email">
+        <input name="email" type="email">
     </label>
     <label>Замовник
         <select name="customer">
@@ -27,7 +27,7 @@ include_once "manager_menu.php";
         </select>
     </label>
     <label>Пароль
-        <input type="password">
+        <input name="password" type="password">
     </label>
     <label>Тип аккаунту
         <select name="account_type">

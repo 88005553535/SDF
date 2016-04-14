@@ -23,7 +23,6 @@ $query->bindParam(':status',$status);
 $query->bindParam(':employee',$employee);
 $query->bindParam(':deadline',$deadline);
 $query->execute();
-$conn->query($query);
 
 if ($query->errorCode()!=0){
     die("Помилка");

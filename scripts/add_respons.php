@@ -18,7 +18,6 @@ $query->bindParam(':requestId',$requestId);
 $query->bindParam(':respons_text',$respons_text);
 $query->bindParam(':employee',$employee);
 $query->execute();
-$conn->query($query);
 
 if ($query->errorCode()!=0){
     //echo $conn->errorInfo();

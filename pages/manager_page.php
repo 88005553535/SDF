@@ -9,7 +9,5 @@
 require_once "../scripts/header.php";
 require_once '../scripts/functions.php';
 
-echo "<div id='wrapper'>";
 include_once "manager_menu.php";
 include_once "active_orders.php";
-echo "</div>";

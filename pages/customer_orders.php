@@ -13,7 +13,6 @@ $conn = getConnection();
 $sql = $conn->prepare(file_get_contents('../querys/customer_orders.sql'));
 $sql->bindParam(':email', $_SESSION['user_email']);
 $sql->execute();
-$conn->query($sql);
 
 $orderList = $sql->fetchAll();
 

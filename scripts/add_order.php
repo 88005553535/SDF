@@ -25,7 +25,6 @@ $query->bindParam(':date_opened',$date_opened);
 $query->bindParam(':price',$price);
 $query->bindParam(':deadline',$deadline);
 $query->execute();
-$conn->query($query);
 
 if ($query->errorCode()!=0){
     die("Помилка");

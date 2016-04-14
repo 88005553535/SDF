@@ -24,8 +24,6 @@ $query->bindParam(':phone_number',$phone_number);
 $query->bindParam(':email',$email);
 $query->bindParam(':customer_type',$cust_type);
 $query->execute();
-$conn->query($query);
-
 
 if ($query->errorCode()!=0){
     die("Помилка");

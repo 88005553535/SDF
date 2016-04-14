@@ -24,4 +24,3 @@ $query->bindParam(':title',$title);
 $query->bindParam(':description',$description);
 $query->bindParam(':customer',$customerId);
 $query->execute();
-$conn->query($query);
