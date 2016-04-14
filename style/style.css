@@ -7,20 +7,29 @@ body{
 }
 
 form{
+    /*display: inline-block;*/
     background-color: #fcfdfd;
-    border: solid 1px #b6bfc2;
+    /*border: solid 1px #b6bfc2;*/
     padding: 1em 1.5em;
     margin: 2em auto;
     width: 15em;
+    border-radius: 5%;
+}
+
+
+form > label{
+    /*display: block;*/
 }
 
 form > label > input, textarea, select{
-    display: block;
+    /*border-radius: 20%;*/
+    display: inline-block;
     width: 100%;
+    /*width: 15em;*/
+    line-height: 2em;
     border: solid 1px #b6bfc2;
     height: 2em;
-    font-family: inherit;
-    padding: 5px;
+    /*padding: 0.5em;*/
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -101,4 +110,8 @@ form .table-caption{
     padding: 10px;
     border: solid 1px #b6bfc2;
     border-collapse: collapse;
+}
+
+td > a{
+    color: #fcfdfd;
 }

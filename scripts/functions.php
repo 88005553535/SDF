@@ -7,16 +7,16 @@
  */
 
 function getConnection(){
-    $username = 'u548809910_root';
-    $password = '433848814';
-    $db_database = 'u548809910_sdf';
+//    $username = 'u548809910_root';
+//    $password = '433848814';
+//    $db_database = 'u548809910_sdf';
     if($_SERVER['HTTP_HOST'] == 'localhost'){
     $username = 'root';
     $password = '433848814';
     $db_database = 'software_developer_firm';
     }
-
-    $dsn = "mysql:host=". 'mysql.hostinger.com.ua'.";dbname=". $db_database . ";charset=UTF8;";
+    $dsn = "mysql:host=". $_SERVER['HTTP_HOST'].";dbname=". $db_database . ";charset=UTF8;";
+//    $dsn = "mysql:host=". 'mysql.hostinger.com.ua'.";dbname=". $db_database . ";charset=UTF8;";
     $conn = NULL;
     if (!isset($conn)){
         try {

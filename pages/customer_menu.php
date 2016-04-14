@@ -18,3 +18,6 @@
         <li class="right-items"><a href="../scripts/logout.php">Вихід</a></li>
     </ul>
 </div>
+<?php
+echo "<p id=\"welcome-text\">Вітаю Вас, <b>{$_SESSION['user_email']}</b></p>";
+?>

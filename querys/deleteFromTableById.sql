@@ -1,0 +1,1 @@
+DELETE FROM &:table WHERE :table.id = :id

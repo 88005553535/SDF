@@ -18,7 +18,7 @@ $orderList = $sql->fetchAll();
 
 echo "<table class='table'>";
 echo "<caption>Мої замовлення</caption>";
-echo "<th>Номер</th><th>Проект</th><th>Специфікація</th><th>Відкриття</th><th>Закриття</th><th>Ціна</th><th>Дедлайн</th><th>Статус</th>";
+echo "<th>Номер</th><th>Проект</th><th>Специфікація</th><th>Відкриття</th><th>Закриття</th><th>Ціна</th><th>Дедлайн</th><th>Статус</th><th colspan='2'>Действия</th>";
 for ($i=0; $i<count($orderList); $i++) {
     echo <<<_EOD
     <tr>
@@ -30,6 +30,7 @@ for ($i=0; $i<count($orderList); $i++) {
 <td> {$orderList[$i][5]}</td>
 <td> {$orderList[$i][6]}</td>
 <td> {$orderList[$i][7]}</td>
+<td><a href="../scripts/deleteFromTableById.php?id={$requestsList[$i][0]}&table=customer">Удалить</a></td>
 </tr>
 _EOD;
 }

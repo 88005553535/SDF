@@ -17,7 +17,7 @@ $taskList = $sql->fetchAll();
 
 echo "<table class='table'>";
 echo "<caption>Мої завдання</caption>";
-echo "<th>Номер</th><th>Заголовок</th><th>Опис</th><th>Статус</th><th>Співробітник</th><th>Відкриття</th><th>Закриття</th><th>Дедлайн</th>";
+echo "<th>Номер</th><th>Заголовок</th><th>Опис</th><th>Статус</th><th>Співробітник</th><th>Відкриття</th><th>Закриття</th><th>Дедлайн</th><th colspan='2'>Действия</th>";
 for ($i=0; $i<count($taskList); $i++) {
     echo <<<_EOD
     <tr>
@@ -29,7 +29,8 @@ for ($i=0; $i<count($taskList); $i++) {
 <td> {$taskList[$i][5]}</td>
 <td> {$taskList[$i][6]}</td>
 <td> {$taskList[$i][7]}</td>
+<td><a href="../scripts/deleteFromTableById.php?id={$taskList[$i][0]}&table=task">Удалить</a></td>
 </tr>
 _EOD;
-    echo "</table>";
 }
+echo "</table>";
